@@ -6,7 +6,7 @@ export const setToken = (token) => {
 
 //获取token
 export const getToken = () => {
-    localStorage.getItem('TOKEN')
+    return localStorage.getItem('TOKEN')
 }
 
 //清除本地存储token

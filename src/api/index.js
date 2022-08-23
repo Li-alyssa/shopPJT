@@ -121,3 +121,12 @@ export const reqLogout = () => {
         method: 'get',
     })
 }
+
+//获取用户地址接口
+export const reqUserAddressInfo = () => {
+    return requests({
+        url: '/user/userAddress/auth/findUserAddressList',
+        method: 'get',
+    })
+}
+

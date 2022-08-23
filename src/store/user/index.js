@@ -69,7 +69,6 @@ const actions = {
         if (result.code == 200) {
             //此时已成功获取到token
             commit('GETUSERINFO', result.data);
-
             return "ok"
         } else {
             return Promise.reject(new Error('fail'))
